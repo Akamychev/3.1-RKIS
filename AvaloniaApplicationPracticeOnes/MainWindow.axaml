@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Height="300" Width="300" CanResize="False"
+        Background="black"
+        x:Class="AvaloniaApplicationPracticeOnes.MainWindow"
+        Title="Авторизация">
+    <StackPanel Orientation="Vertical"
+                Margin="20"
+                VerticalAlignment="Center">
+        <TextBox Name="LoginTBox"
+                 Watermark="Введите логин"
+                 Foreground="turquoise"
+                 Background="black"
+                 Margin="0 0 0 10" />
+        <TextBox Name="PasswordTBox"
+                 Watermark="Введите пароль"
+                 Margin="0 0 0 10"
+                 Foreground="turquoise"
+                 Background="black"
+                 PasswordChar="*" />
+        <Button Content="Войти"
+                Foreground="turquoise"
+                Background="black"
+                Width="200"
+                HorizontalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Margin="0 0 0 5"
+                Name="AuthBtn"
+                Click="AuthBtn_OnClick" />
+        <Button Content="Зарегистрироваться"
+                Width="200"
+                HorizontalAlignment="Center"
+                Foreground="turquoise"
+                Background="black"
+                HorizontalContentAlignment="Center"
+                Name="RegBtn"
+                Click="RegBtn_OnClick" />
+    </StackPanel>
+</Window>
